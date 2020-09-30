@@ -28,6 +28,7 @@ public class RemarkCommand extends Command {
         + "Example: " + COMMAND_WORD + " 1 "
         + "r/ Likes to swim.";
     public static final String MESSAGE_ARGUMENTS = "Index: %1$d, Remark: %2$s";
+    public static final String MESSAGE_NOT_IMPLEMENTED_YET = "Remark command not implemented yet";
 
     private final Index index;
     private final Remark remark;
@@ -43,9 +44,6 @@ public class RemarkCommand extends Command {
         this.index = index;
         this.remark = remark;
     }
-
-    public static final String MESSAGE_NOT_IMPLEMENTED_YET = "Remark command not implemented yet";
-
 
     @Override
     public CommandResult execute(Model model) throws CommandException {
