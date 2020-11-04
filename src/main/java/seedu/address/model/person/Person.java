@@ -96,9 +96,9 @@ public class Person {
         }
 
         return otherPerson != null
-                && otherPerson.getName().equals(getName())
-                && (otherPerson.getPhone().equals(getPhone()) || otherPerson.getEmail().equals(getEmail())
-                || otherPerson.getMatriculationNumber().equals(getMatriculationNumber()));
+                && (otherPerson.getMatriculationNumber().equals(getMatriculationNumber())
+                || otherPerson.getName().equals(getName())
+                    && (otherPerson.getPhone().equals(getPhone()) || otherPerson.getEmail().equals(getEmail())));
     }
 
     /**

@@ -43,8 +43,9 @@ public class AddCommand extends Command {
             + PREFIX_STUDENT_GROUP + "hackers ";
 
     public static final String MESSAGE_SUCCESS = "New resident added: %1$s";
-    public static final String MESSAGE_DUPLICATE_PERSON = "This resident already exists in the address book";
-
+    public static final String MESSAGE_DUPLICATE_PERSON = "This resident already exists in Hall-y.\n"
+            + "This resident either has the same matriculation number, "
+            + "or the same name and phone number / email address";
     private final Person toAdd;
 
     /**
